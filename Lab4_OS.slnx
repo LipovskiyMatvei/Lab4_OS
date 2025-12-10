@@ -5,4 +5,5 @@
   </Configurations>
   <Project Path="Lab4_OS/Lab4_OS.vcxproj" />
   <Project Path="Lab4_OS_Sender/Lab4_OS_Sender.vcxproj" />
+  <Project Path="Lab4_OS_test/Lab4_OS_test.vcxproj" />
 </Solution>
