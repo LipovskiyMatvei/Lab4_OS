@@ -3,7 +3,7 @@
 #include <string>
 #include <windows.h>
 #include "Common.h"
-
+#include <algorithm>
 using namespace std;
 
 int main(int argc, char* argv[]) {
@@ -45,6 +45,7 @@ int main(int argc, char* argv[]) {
             cout << "Введите сообщение (макс 20 символов): ";
             getline(cin, msg);
 
+
             if (msg.length() >= MSG_SIZE) {
                 msg = msg.substr(0, MSG_SIZE - 1);
             }
@@ -61,7 +62,11 @@ int main(int argc, char* argv[]) {
 
                 file.seekp(getOffset(header.tail), ios::beg);
                 char msgBuffer[MSG_SIZE] = { 0 };
-                strcpy_s(msgBuffer, msg.c_str());
+
+               strcpy_s(msgBuffer, msg.c_str());
+                
+               //copy(msg.begin(), msg.begin() + min((int)msg.size(), MSG_SIZE - 1), msgBuffer);
+                
                 file.write(msgBuffer, MSG_SIZE);
 
                 header.tail = (header.tail + 1) % header.max_size;

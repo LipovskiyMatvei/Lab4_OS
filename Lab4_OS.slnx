@@ -3,7 +3,7 @@
     <Platform Name="x64" />
     <Platform Name="x86" />
   </Configurations>
-  <Project Path="Lab4_OS/Lab4_OS.vcxproj" />
-  <Project Path="Lab4_OS_Sender/Lab4_OS_Sender.vcxproj" />
-  <Project Path="Lab4_OS_test/Lab4_OS_test.vcxproj" />
+  <Project Path="Lab4_OS/Lab4_OS.vcxproj" Id="77e3495c-8ccc-4f30-ae82-c8049c1b8fea" />
+  <Project Path="Lab4_OS_Sender/Lab4_OS_Sender.vcxproj" Id="fd47828f-2d37-45dd-ae1f-187e886af057" />
+  <Project Path="Lab4_OS_test/Lab4_OS_test.vcxproj" Id="b783ecaa-0d13-4998-9afd-b4851da18d48" />
 </Solution>
